@@ -1,0 +1,13 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "node_modules/": true,
+        "dist/": true,
+        "lib/": true,
+        "typings/": true
+    },
+    // Enable / disable JavaScript validation
+    "javascript.validate.enable": false,
+    "eslint.autoFixOnSave": true,
+    "javascript.implicitProjectConfig.checkJs": true,
+}
