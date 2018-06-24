@@ -12,6 +12,6 @@ export const StyledPageWrapper = styled.div`
 export const StyledPageContainer = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 1000px;  
+    max-width: 1200px;  
     padding: 4em 1em;
 `;

@@ -7,4 +7,5 @@ export default styled.span`
     margin: 2em;
     font-size: 1.25em;
     box-sizing: border-box;
+    text-align: center;
 `;

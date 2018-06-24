@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import MainImg from '../../resources/main-big-img.png';
+import MainImg from '../../resources/IMG_3886.jpg';
 
 export const StyledImageContainer = styled.div`
     width: 100%;
@@ -10,4 +10,5 @@ export const StyledImageContainer = styled.div`
     background-position: 50% 5%;
     background-image: url(${MainImg});
     border-bottom: 1.11em solid #EEE9E8;
+    background-position: center;
 `;

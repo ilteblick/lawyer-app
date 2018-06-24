@@ -12,8 +12,8 @@ export default function Footer() {
     return (
         <div>
             <StyledContainer>
-                <StyledInfoText>Contact Our Pasadena Attorney at Law Offices of Donald P. Schweitzer Today!</StyledInfoText>
-                <StyledPhoneNumber>(626) 788-5225</StyledPhoneNumber>
+                <StyledInfoText>Свяжитесь с нами сегодня.</StyledInfoText>
+                <StyledPhoneNumber>+375 29 6263030</StyledPhoneNumber>
             </StyledContainer>
             <StyledFooterLinks>
                 <div>

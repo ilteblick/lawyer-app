@@ -14,15 +14,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import FontFaceObserver from 'fontfaceobserver';
 import 'sanitize.css/sanitize.css';
-import 'antd/dist/antd.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 // Import root app
 import App from 'containers/App';
 
 // Load the favicon and the .htaccess file
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
-
 // Import CSS reset and Global Styles
+import 'antd/dist/antd.css';
 import './global-styles';
 
 

@@ -170,7 +170,8 @@
       "react/self-closing-comp": 0,
       "redux-saga/no-yield-in-race": 0,
       "redux-saga/yield-effects": 0,
-      "require-yield": 0
+      "require-yield": 0,
+      "camelcase": 0
     },
     "settings": {
       "import/resolver": {
@@ -251,6 +252,7 @@
     "lodash": "4.17.5",
     "minimist": "1.2.0",
     "prop-types": "15.6.1",
+    "rc-menu": "^7.1.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-loadable": "5.3.1",
