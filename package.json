@@ -255,14 +255,17 @@
     "rc-menu": "^7.1.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
+    "react-google-maps": "^9.4.5",
     "react-loadable": "5.3.1",
     "react-player": "^1.6.4",
     "react-responsive-carousel": "^3.1.33",
     "react-router-dom": "4.2.2",
+    "react-yandex-maps": "^2.2.0",
     "redux-saga": "^0.16.0",
     "sanitize.css": "4.1.0",
     "styled-components": "2.3.0",
-    "warning": "3.0.0"
+    "warning": "3.0.0",
+    "yandex-map-react": "^1.1.1"
   },
   "devDependencies": {
     "add-asset-html-webpack-plugin": "2.1.3",

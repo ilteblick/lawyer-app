@@ -4,7 +4,7 @@ import MainImg from '../../resources/IMG_3886.jpg';
 
 export const StyledImageContainer = styled.div`
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 5%;

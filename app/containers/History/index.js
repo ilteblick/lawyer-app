@@ -11,6 +11,8 @@ import { Header, MenuLink, Container } from 'components/LeftMenu';
 import { StyledPageWrapper, StyledPageContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
+import Img from './IMG_3922.jpg';
+
 export default function History() {
     return (
         <StyledPageWrapper>
@@ -24,12 +26,20 @@ export default function History() {
             <div style={{ display: 'flex' }}>
                 <Container>
                     <Header>Законодательное регулирование</Header>
-                    <MenuLink>Адвокаты в Республике Беларусь</MenuLink>
-                    <MenuLink>Гарантия адвокатской деятельности </MenuLink>
-                    <MenuLink>Организационные формы деятельности адвокатов</MenuLink>
+                    <Link to="/lawersRB"><MenuLink>Адвокаты в Республике Беларусь</MenuLink></Link>
+                    <Link to="/guarantee"><MenuLink>Гарантия адвокатской деятельности</MenuLink> </Link>
+                    <Link to="/org-forms"><MenuLink>Организационные формы деятельности адвокатов</MenuLink></Link>
                 </Container>
                 <StyledPageContainer>
                     <Title>История нашего товарищества</Title>
+
+                    <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
+                        <div style={{ width: '50%' }}>
+                            <img src={Img} alt="" style={{ width: '100%' }} />
+                        </div>
+                    </div>
+
+
                     <SubTitle>Пополнение рядов адвокатов</SubTitle>
                     <Text>В далеком 2002 году Татьяна Гуменюк была принята в ряды членов Минской городской коллегии адвокатов и начала свой профессиональный путь в числе профессионалов Юридической консультации Заводского района г.Минска.                На протяжении долгого пути принимала участие в юридических спорах различного профиля, будь-то сложнейшие многоэпизодные уголовные дела или гражданские споры по различным вопросам. Многопрофильная деятельность Татьяны, позволила ей к моменту начала сотрудничества в области ведения гражданских дел накопить богатый юридический опыт из всех отраслей права Республики Беларусь и выбрать ту специализации, в которой возможно оказать наиболее значимую юридическую помощь.</Text>
                     <Text>Знаковым годом для образования нашего юридического партнерства стал 2014 год, год в котором в члены Минской городской коллегии адвокатов произошло пополнение и одним из новых профессионалов своего дела стал Алексей Прибыльский.

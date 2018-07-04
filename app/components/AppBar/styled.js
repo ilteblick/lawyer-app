@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
     width: 100%;
     box-sizing: border-box;
     background: white;
+    z-index: 1000;
 `;
 
 export const StyledSpan = styled.span`
@@ -30,6 +31,8 @@ export const MenuItem = styled.div`
     padding: .25em 3em;
     font-family: 'Marcellus', serif;
     position: relative;
+    border-bottom: 1px solid #075F92;
+    border-right: 1px solid #075F92;
 
     &:hover{
         background-color: #13355C;

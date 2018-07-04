@@ -13,7 +13,17 @@ import PracticalAreas1 from 'containers/PracticalAreas1/Loadable';
 import PracticalAreas2 from 'containers/PracticalAreas2/Loadable';
 import PracticalAreas3 from 'containers/PracticalAreas3/Loadable';
 import PracticalAreas4 from 'containers/PracticalAreas4/Loadable';
+import LawersRepOfBel from 'containers/LawersRepOfBel/Loadable';
+import Guarantee from 'containers/Guarantee/Loadable';
+import OraganizationalForms from 'containers/OraganizationalForms/Loadable';
+import PrinciplesOfOrganizations from 'containers/PrinciplesOfOrganizations/Loadable';
+import LawersGoals from 'containers/LawersGoals/Loadable';
+import ContactUs from 'containers/ContactUs/Loadable';
+
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+
+import Acts1 from 'containers/Acts/Acts1/Loadable';
+import Acts2 from 'containers/Acts/Acts2/Loadable';
 
 import Act12 from 'containers/Acts/Act12/Loadable';
 import Act13 from 'containers/Acts/Act13/Loadable';
@@ -86,10 +96,22 @@ export default class App extends React.PureComponent {
           <Route exact path="/attorneys/TatyanaGumenuk" component={AttorneyTatsiana} />
           <Route exact path="/principles" component={Principles} />
 
+          <Route exact path="/lawersRB" component={LawersRepOfBel} />
+          <Route exact path="/guarantee" component={Guarantee} />
+          <Route exact path="/org-forms" component={OraganizationalForms} />
+
+          <Route exact path="/principles-organization" component={PrinciplesOfOrganizations} />
+          <Route exact path="/lawers-goals" component={LawersGoals} />
+
+          <Route exact path="/contact-us" component={ContactUs} />
+
           <Route exact path="/areas/1" component={PracticalAreas1} />
           <Route exact path="/areas/2" component={PracticalAreas2} />
           <Route exact path="/areas/3" component={PracticalAreas3} />
           <Route exact path="/areas/4" component={PracticalAreas4} />
+
+          <Route exact path="/acts/1" component={Acts1} />
+          <Route exact path="/acts/2" component={Acts2} />
 
           <Route exact path="/acts/12" component={Act12} />
           <Route exact path="/acts/13" component={Act13} />

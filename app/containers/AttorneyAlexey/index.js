@@ -28,9 +28,9 @@ export default function AttorneyAlexey() {
             <div style={{ display: 'flex' }}>
                 <Container>
                     <Header>Законодательное регулирование</Header>
-                    <MenuLink>Адвокаты в Республике Беларусь</MenuLink>
-                    <MenuLink>Гарантия адвокатской деятельности </MenuLink>
-                    <MenuLink>Организационные формы деятельности адвокатов</MenuLink>
+                    <Link to="/lawersRB"><MenuLink>Адвокаты в Республике Беларусь</MenuLink></Link>
+                    <Link to="/guarantee"><MenuLink>Гарантия адвокатской деятельности</MenuLink> </Link>
+                    <Link to="/org-forms"><MenuLink>Организационные формы деятельности адвокатов</MenuLink></Link>
                 </Container>
                 <StyledPageContainer>
                     <Title>Адвокат Алексей Прибыльский</Title>

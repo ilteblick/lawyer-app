@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
-import MainImg from './SubBanner_Main.jpg';
+import MainImg from './IMG_3954.jpg';
 
 export const StyledImageContainer = styled.div`
     width: 100%;
-    min-height: 200px;
+    min-height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 70%;
+    background-position: 30%;
     background-image: url(${MainImg});
     border-bottom: 1.11em solid #EEE9E8;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 128px;
+    text-align: center;
 `;
 
 export const StyledLabel = styled.span`

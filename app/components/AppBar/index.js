@@ -15,10 +15,10 @@ export default class AppBar extends React.PureComponent {
                 <div style={{ height, transition: 'height 0.7s', display: 'flex', justifyContent: 'flex-end', flexDirection: 'column' }}>
                     <div style={{ flex: 1, height: '100%' }}>
                         <div style={{ flex: 1, height: '100%' }}>
-                            <img style={{ height: '100%' }} src={Logo} alt="" />
+                            <Link to="/"><img style={{ height: '100%' }} src={Logo} alt="" /></Link>
                             <StyledSpan>LAW PARTNERSHIP of lawyers A. Prybylski & T.Gumenuk</StyledSpan>
                         </div>
-                        <div style={{ background: 'white', display: 'flex', justifyContent: 'flex-end' }}>
+                        <div style={{ background: 'white', display: 'flex', justifyContent: 'flex-end', borderBottom: '10px solid #D0D9E0' }}>
                             <div style={{ display: 'flex' }}>
                                 <MenuItem>
                                     О нас
@@ -37,9 +37,9 @@ export default class AppBar extends React.PureComponent {
                                         <SubMenu><Link to="/areas/4">Дополнительная практика. Обязательства, наследование, юридические лица</Link></SubMenu>
                                     </ul>
                                 </MenuItem>
-                                <MenuItem>
+                                <Link to="/contact-us"><MenuItem>
                                     Контакты
-                            </MenuItem>
+                                </MenuItem></Link>
                                 {/* <MenuItem>О нас</MenuItem>
                             <MenuItem>Область практики</MenuItem>
                             <MenuItem>Контакты</MenuItem>*/}
@@ -47,8 +47,8 @@ export default class AppBar extends React.PureComponent {
                         </div>
                     </div>
 
-                </div>
-            </StyledHeader>
+                </div >
+            </StyledHeader >
         );
     }
 }
