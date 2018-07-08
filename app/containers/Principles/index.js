@@ -7,7 +7,7 @@ import Text from 'components/Text';
 import Banner from 'components/Banner';
 import { Header, MenuLink, Container } from 'components/LeftMenu';
 
-import { StyledPageWrapper, StyledPageContainer } from 'components/PageContainers';
+import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_4029.jpg';
@@ -22,7 +22,7 @@ export default function Principles() {
                 <BradcrumpsLink>Наши принципы</BradcrumpsLink>
             </Bradcrumps>
 
-            <div style={{ display: 'flex' }}>
+            <StyledContainer>
                 <Container>
                     <Header>Законодательное регулирование</Header>
                     <Link to="/principles-organization"><MenuLink>Принципы организации адвокатуры и адвокатской деятельности</MenuLink></Link>
@@ -32,7 +32,7 @@ export default function Principles() {
                     <Title>Наши принципы</Title>
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
-                        <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
                             <img src={Img} alt="" style={{ width: '100%' }} />
                         </div>
                     </div>
@@ -50,7 +50,7 @@ export default function Principles() {
 
                     <Text>Указанные принципы являются основой нашей деятельности и дают Вам гарантию на наше плодотворное сотрудничество!</Text>
                 </StyledPageContainer>
-            </div>
+            </StyledContainer>
         </StyledPageWrapper>
     );
 }

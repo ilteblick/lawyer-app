@@ -28,5 +28,8 @@ export const MenuLink = styled.span`
 `;
 
 export const Container = styled.div`
+@media (max-device-width: 900px){
+    padding: 1em;
+}
     padding: 6em 3em;
 `;

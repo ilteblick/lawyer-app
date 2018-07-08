@@ -38,7 +38,7 @@ const MOUNT_NODE = document.getElementById('app');
 
 const render = () => {
   ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter >
       <App />
     </BrowserRouter>,
     MOUNT_NODE

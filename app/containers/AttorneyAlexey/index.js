@@ -8,7 +8,7 @@ import PersonInfo from 'components/PersonInfo';
 import Banner from 'components/Banner';
 import { Header, MenuLink, Container } from 'components/LeftMenu';
 
-import { StyledPageWrapper, StyledPageContainer } from 'components/PageContainers';
+import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_3906.jpg';
@@ -25,7 +25,7 @@ export default function AttorneyAlexey() {
                 <BradcrumpsLink>Адвокат Алексей Прибыльский</BradcrumpsLink>
             </Bradcrumps>
 
-            <div style={{ display: 'flex' }}>
+            <StyledContainer>
                 <Container>
                     <Header>Законодательное регулирование</Header>
                     <Link to="/lawersRB"><MenuLink>Адвокаты в Республике Беларусь</MenuLink></Link>
@@ -36,7 +36,7 @@ export default function AttorneyAlexey() {
                     <Title>Адвокат Алексей Прибыльский</Title>
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
-                        <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
                             <img src={Img} alt="" style={{ width: '100%' }} />
                         </div>
                         <PersonInfo>Обратившись к адвокату вчера – Вы избегаете проблем завтра</PersonInfo>
@@ -57,7 +57,7 @@ export default function AttorneyAlexey() {
 
                     <Text>В настоящее время я специализируюсь на спорах в рамках семейного законодательства и буду рад Вам помочь в разрешении Вашей существующей проблемы, или дам разъяснения и рекомендации как  проблему избежать в будущем. </Text>
                 </StyledPageContainer>
-            </div>
+            </StyledContainer>
         </StyledPageWrapper>
     );
 }

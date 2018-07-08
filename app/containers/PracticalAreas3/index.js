@@ -7,7 +7,7 @@ import Text from 'components/Text';
 import Banner from 'components/Banner';
 import { Header, MenuLink, Container } from 'components/LeftMenu';
 
-import { StyledPageWrapper, StyledPageContainer } from 'components/PageContainers';
+import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_3971.jpg';
@@ -21,7 +21,7 @@ export default function Areas3() {
                 <BradcrumpsArrow>></BradcrumpsArrow>
                 <BradcrumpsLink>Подготовка к судебному спору о расторжении брака, разделе совместного нажитого имущества, определение места жительства несовершеннолетних детей, уплате алиментов, а также их ведение на стадии рассмотрения дела в суде</BradcrumpsLink>
             </Bradcrumps>
-            <div style={{ display: 'flex' }}>
+            <StyledContainer>
                 <Container>
                     <Header>Законодательное регулирование</Header>
                     <Link to="/acts/1"><MenuLink>Некоторые положения Кодекса Республики Беларусь о браке и семье </MenuLink></Link>
@@ -32,7 +32,7 @@ export default function Areas3() {
                     <Title>Подготовка к судебному спору о расторжении брака, разделе совместного нажитого имущества, определение места жительства несовершеннолетних детей, уплате алиментов, а также их ведение на стадии рассмотрения дела в суде</Title>
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
-                        <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
                             <img src={Img} alt="" style={{ width: '100%' }} />
                         </div>
                     </div>
@@ -47,7 +47,7 @@ export default function Areas3() {
                     И указанный приведенный пример является всего-навсего 1% от иных вопросов и нюансов, которые подлежат вниманию при ведении дела в суде, и указанное может обеспечить только адвокат.
                 </Text>
                 </StyledPageContainer>
-            </div>
+            </StyledContainer>
         </StyledPageWrapper>
     );
 }

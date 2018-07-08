@@ -7,7 +7,7 @@ import Text from 'components/Text';
 import Banner from 'components/Banner';
 import { Header, MenuLink, Container } from 'components/LeftMenu';
 
-import { StyledPageWrapper, StyledPageContainer } from 'components/PageContainers';
+import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_3991.jpg';
@@ -22,7 +22,7 @@ export default function Areas1() {
                 <BradcrumpsLink>Предоставление юридической консультации до заключения брака, способы определения имущественных прав сторон в браке</BradcrumpsLink>
             </Bradcrumps>
 
-            <div style={{ display: 'flex' }}>
+            <StyledContainer>
                 <Container>
                     <Header>Законодательное регулирование</Header>
                     <Link to="/acts/1"><MenuLink>Некоторые положения Кодекса Республики Беларусь о браке и семье </MenuLink></Link>
@@ -33,7 +33,7 @@ export default function Areas1() {
                     <Title>Предоставление юридической консультации до заключения брака, способы определения имущественных прав сторон в браке</Title>
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
-                        <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
                             <img src={Img} alt="" style={{ width: '100%' }} />
                         </div>
                     </div>
@@ -47,7 +47,7 @@ export default function Areas1() {
                     <Text>Следует отметить, что права и обязанности супругов, предусмотренные брачным договором, возможно ставить в зависимость от определенного срока либо от наступления или не наступления определенных условий, что также не только дает определенные гарантии сторонам, но и дисциплинирует супругов в браке.</Text>
                     <Text>Таким образом, получения профессиональной юридической консультации до брака является особой необходимостью, которая предоставляет уверенность в завтрашнем дне, способствует избавлению страха перед браком как юридическим союзом двух лиц, способствует защищенности, как мужчины, так и женщины.</Text>
                 </StyledPageContainer>
-            </div>
+            </StyledContainer>
         </StyledPageWrapper>
     );
 }

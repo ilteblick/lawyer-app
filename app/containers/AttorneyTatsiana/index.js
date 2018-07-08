@@ -8,7 +8,7 @@ import PersonInfo from 'components/PersonInfo';
 import Banner from 'components/Banner';
 import { Header, MenuLink, Container } from 'components/LeftMenu';
 
-import { StyledPageWrapper, StyledPageContainer } from 'components/PageContainers';
+import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_3819.jpg';
@@ -25,7 +25,7 @@ export default function AttorneyTatsiana() {
                 <BradcrumpsLink>Адвокат Татьяна Гуменюк</BradcrumpsLink>
             </Bradcrumps>
 
-            <div style={{ display: 'flex' }}>
+            <StyledContainer>
                 <Container>
                     <Header>Законодательное регулирование</Header>
                     <Link to="/lawersRB"><MenuLink>Адвокаты в Республике Беларусь</MenuLink></Link>
@@ -36,7 +36,7 @@ export default function AttorneyTatsiana() {
                     <Title>Адвокат Татьяна Гуменюк</Title>
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
-                        <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
                             <img src={Img} alt="" style={{ width: '100%' }} />
                         </div>
                         <PersonInfo>Брак – это партнерство, основанное на взаимном уважении и обеспеченное законом</PersonInfo>
@@ -54,7 +54,7 @@ export default function AttorneyTatsiana() {
 
                     <Text>В настоящее время я специализируюсь на спорах в рамках семейного законодательства и буду рада Вам помочь в Вашей проблеме, путем нахождения наиболее оптимального выхода, а также сделаю все, чтобы предотвратить негативные явления в будущем.</Text>
                 </StyledPageContainer>
-            </div>
+            </StyledContainer>
         </StyledPageWrapper>
     );
 }

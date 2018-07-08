@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledAboutUsContainer = styled.div`
-    @media (max-width: 900px){
+    @media (max-device-width: 900px){
         flex-direction: column;
     }
     display:flex;
@@ -9,7 +9,7 @@ export const StyledAboutUsContainer = styled.div`
 `;
 
 export const StyledMenuContainer = styled.div`
-    @media (max-width: 900px){
+    @media (max-device-width: 900px){
         order: 2;
     }
     order: 1;
@@ -24,7 +24,7 @@ export const StyledMenuContainer = styled.div`
 `;
 
 export const StyledDescriptionContainser = styled.div`
-    @media (max-width: 900px){
+    @media (max-device-width: 900px){
         order: 1;
     }
     order: 2;

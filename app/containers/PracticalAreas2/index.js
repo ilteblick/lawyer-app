@@ -7,7 +7,7 @@ import Text from 'components/Text';
 import Banner from 'components/Banner';
 import { Header, MenuLink, Container } from 'components/LeftMenu';
 
-import { StyledPageWrapper, StyledPageContainer } from 'components/PageContainers';
+import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_3976.jpg';
@@ -22,7 +22,7 @@ export default function Areas2() {
                 <BradcrumpsLink>Предоставление юридической консультации лицам, находящимся в браке относительно их прав и обязанностей, режима собственности, способов регулирования правоотношений</BradcrumpsLink>
             </Bradcrumps>
 
-            <div style={{ display: 'flex' }}>
+            <StyledContainer>
                 <Container>
                     <Header>Законодательное регулирование</Header>
                     <Link to="/acts/1"><MenuLink>Некоторые положения Кодекса Республики Беларусь о браке и семье </MenuLink></Link>
@@ -33,7 +33,7 @@ export default function Areas2() {
                     <Title>Предоставление юридической консультации лицам, находящимся в браке относительно их прав и обязанностей, режима собственности, способов регулирования правоотношений</Title>
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
-                        <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
                             <img src={Img} alt="" style={{ width: '100%' }} />
                         </div>
                     </div>
@@ -48,7 +48,7 @@ export default function Areas2() {
 
                     <Text>Резюмируя, посещение адвокатов супругом во время брака, не только поможет дать ответы на волнующие вопросы, но и избежать трудностей завтра, если будет констатировано фиаско взаимного союза.</Text>
                 </StyledPageContainer>
-            </div>
+            </StyledContainer>
         </StyledPageWrapper>
     );
 }

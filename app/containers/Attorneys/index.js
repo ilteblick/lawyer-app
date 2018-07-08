@@ -6,7 +6,7 @@ import Title from 'components/Title';
 import Banner from 'components/Banner';
 import { Header, MenuLink, Container } from 'components/LeftMenu';
 
-import { StyledPageWrapper, StyledPageContainer } from 'components/PageContainers';
+import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_3886.jpg';
@@ -22,7 +22,7 @@ export default function Attorneys() {
                 <BradcrumpsLink>Адвокаты</BradcrumpsLink>
             </Bradcrumps>
 
-            <div style={{ display: 'flex' }}>
+            <StyledContainer>
                 <Container>
                     <Header>Законодательное регулирование</Header>
                     <Link to="/lawersRB"><MenuLink>Адвокаты в Республике Беларусь</MenuLink></Link>
@@ -35,7 +35,7 @@ export default function Attorneys() {
                     <Link to="/attorneys/AlexeyPrybylski"><StyledA>Адвокат Алексей Прибыльский</StyledA></Link>
                     <Link to="/attorneys/TatyanaGumenuk"><StyledA>Адвокат Татьяна Гуменюк</StyledA></Link>
                 </StyledPageContainer>
-            </div>
+            </StyledContainer>
         </StyledPageWrapper>
     );
 }
