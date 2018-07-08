@@ -18,7 +18,10 @@ export const StyledImageContainer = styled.div`
 `;
 
 export const StyledLabel = styled.span`
-    color: #FFFFFF;
+    color: black;
     font-size: 2.5em;
     padding: 12px;
+    background: #bfbfbf;
+    opacity: 0.8;
+    min-width: 100%;
 `;

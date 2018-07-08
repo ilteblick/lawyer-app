@@ -17,7 +17,6 @@ export const StyledSpan = styled.span`
     color: #a5a5a5;
     line-height: 1.1;
     font-family: 'Cormorant', serif;
-    flex: 1;
     border-bottom: 1px solid #a5a5a5;
 `;
 

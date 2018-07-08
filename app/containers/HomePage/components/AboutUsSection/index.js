@@ -42,10 +42,9 @@ export default function AboutUsSection() {
 
             </StyledDescriptionContainser>
             <StyledMenuContainer>
-                <Link to="/"><StyledLink>Link1</StyledLink></Link>
-                <Link to="/"><StyledLink>Link2</StyledLink></Link>
-                <Link to="/"><StyledLink>Link3</StyledLink></Link>
-                <Link to="/"><StyledLink>Link4</StyledLink></Link>
+                <Link to="/statements"><StyledLink>Составления заявлений, жалоб и других документы правового характера</StyledLink></Link>
+                <Link to="/represent"><StyledLink>Представления интересов наших клиентов в судах, в том числе на стадии исполнения судебных постановлений, а также в государственных органах, иных организациях, в том числе их органах управления, и перед физическими лицами</StyledLink></Link>
+                <Link to="/assessment"><StyledLink>Правовая оценка документов и деятельности</StyledLink></Link>
             </StyledMenuContainer>
         </StyledAboutUsContainer>
     );

@@ -19,37 +19,15 @@ import OraganizationalForms from 'containers/OraganizationalForms/Loadable';
 import PrinciplesOfOrganizations from 'containers/PrinciplesOfOrganizations/Loadable';
 import LawersGoals from 'containers/LawersGoals/Loadable';
 import ContactUs from 'containers/ContactUs/Loadable';
+import Statements from 'containers/Statements/Loadable';
+import Represent from 'containers/Represent/Loadable';
+import Assessment from 'containers/Assessment/Loadable';
 
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import Acts1 from 'containers/Acts/Acts1/Loadable';
 import Acts2 from 'containers/Acts/Acts2/Loadable';
-
-import Act12 from 'containers/Acts/Act12/Loadable';
-import Act13 from 'containers/Acts/Act13/Loadable';
-import Act13_1 from 'containers/Acts/Act13-1/Loadable';
-import Act15 from 'containers/Acts/Act15/Loadable';
-import Act20 from 'containers/Acts/Act20/Loadable';
-import Act20_1 from 'containers/Acts/Act20-1/Loadable';
-import Act21 from 'containers/Acts/Act21/Loadable';
-import Act22 from 'containers/Acts/Act22/Loadable';
-import Act23 from 'containers/Acts/Act23/Loadable';
-import Act24 from 'containers/Acts/Act24/Loadable';
-import Act26 from 'containers/Acts/Act26/Loadable';
-import Act29 from 'containers/Acts/Act29/Loadable';
-import Act34 from 'containers/Acts/Act34/Loadable';
-import Act35 from 'containers/Acts/Act35/Loadable';
-import Act35_1 from 'containers/Acts/Act35-1/Loadable';
-import Act36 from 'containers/Acts/Act36/Loadable';
-import Act38 from 'containers/Acts/Act38/Loadable';
-import Act41 from 'containers/Acts/Act41/Loadable';
-import Act42 from 'containers/Acts/Act42/Loadable';
-import Act50 from 'containers/Acts/Act50/Loadable';
-import Act51 from 'containers/Acts/Act51/Loadable';
-import Act57 from 'containers/Acts/Act57/Loadable';
-import Act68 from 'containers/Acts/Act68/Loadable';
-import Act74 from 'containers/Acts/Act74/Loadable';
-import Act76 from 'containers/Acts/Act76/Loadable';
+import Acts3 from 'containers/Acts/Acts3/Loadable';
 
 import AppBar from 'components/AppBar';
 import { StyledAppWrapper } from './styled';
@@ -103,7 +81,11 @@ export default class App extends React.PureComponent {
           <Route exact path="/principles-organization" component={PrinciplesOfOrganizations} />
           <Route exact path="/lawers-goals" component={LawersGoals} />
 
-          <Route exact path="/contact-us" component={ContactUs} />
+          <Route path="/contact-us" component={ContactUs} />
+
+          <Route exact path="/statements" component={Statements} />
+          <Route exact path="/represent" component={Represent} />
+          <Route exact path="/assessment" component={Assessment} />
 
           <Route exact path="/areas/1" component={PracticalAreas1} />
           <Route exact path="/areas/2" component={PracticalAreas2} />
@@ -112,32 +94,7 @@ export default class App extends React.PureComponent {
 
           <Route exact path="/acts/1" component={Acts1} />
           <Route exact path="/acts/2" component={Acts2} />
-
-          <Route exact path="/acts/12" component={Act12} />
-          <Route exact path="/acts/13" component={Act13} />
-          <Route exact path="/acts/13-1" component={Act13_1} />
-          <Route exact path="/acts/15" component={Act15} />
-          <Route exact path="/acts/20" component={Act20} />
-          <Route exact path="/acts/20-1" component={Act20_1} />
-          <Route exact path="/acts/21" component={Act21} />
-          <Route exact path="/acts/22" component={Act22} />
-          <Route exact path="/acts/23" component={Act23} />
-          <Route exact path="/acts/24" component={Act24} />
-          <Route exact path="/acts/26" component={Act26} />
-          <Route exact path="/acts/29" component={Act29} />
-          <Route exact path="/acts/34" component={Act34} />
-          <Route exact path="/acts/35" component={Act35} />
-          <Route exact path="/acts/35-1" component={Act35_1} />
-          <Route exact path="/acts/36" component={Act36} />
-          <Route exact path="/acts/38" component={Act38} />
-          <Route exact path="/acts/41" component={Act41} />
-          <Route exact path="/acts/42" component={Act42} />
-          <Route exact path="/acts/50" component={Act50} />
-          <Route exact path="/acts/51" component={Act51} />
-          <Route exact path="/acts/57" component={Act57} />
-          <Route exact path="/acts/68" component={Act68} />
-          <Route exact path="/acts/74" component={Act74} />
-          <Route exact path="/acts/76" component={Act76} />
+          <Route exact path="/acts/3" component={Acts3} />
 
           <Route path="" component={NotFoundPage} />
         </Switch>

@@ -43,7 +43,8 @@ export const StyledLink = styled.span`
     font-family: 'Cormorant', serif;
     font-size: 1.75em;
     border: 1px solid #FFFFFF;
-    padding: 0.2em;
+    padding: 12px;
+    font-weight: bold;
     transition: 0.5s;
     margin: 0.3em 0;
     cursor: pointer;

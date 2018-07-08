@@ -14,9 +14,12 @@ export default class AppBar extends React.PureComponent {
             <StyledHeader>
                 <div style={{ height, transition: 'height 0.7s', display: 'flex', justifyContent: 'flex-end', flexDirection: 'column' }}>
                     <div style={{ flex: 1, height: '100%' }}>
-                        <div style={{ flex: 1, height: '100%' }}>
-                            <Link to="/"><img style={{ height: '100%' }} src={Logo} alt="" /></Link>
-                            <StyledSpan>LAW PARTNERSHIP of lawyers A. Prybylski & T.Gumenuk</StyledSpan>
+                        <div style={{ flex: 1, height: '100%', display: 'flex' }}>
+                            <Link to="/"><img style={{ height: '120%' }} src={Logo} alt="" /></Link>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center', textAlign: 'center' }}>
+                                <StyledSpan>LAW PARTNERSHIP of lawyers A. Prybylski & T. Gumenuk</StyledSpan>
+                                <StyledSpan>LEGAL assistance in FAMILY LAW </StyledSpan>
+                            </div>
                         </div>
                         <div style={{ background: 'white', display: 'flex', justifyContent: 'flex-end', borderBottom: '10px solid #D0D9E0' }}>
                             <div style={{ display: 'flex' }}>
