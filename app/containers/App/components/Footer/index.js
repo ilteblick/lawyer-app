@@ -12,9 +12,9 @@ export default function Footer() {
     return (
         <div>
             <StyledContainer>
-                <StyledInfoText>Свяжитесь с нами сегодня.</StyledInfoText>
+                <StyledInfoText>Будем рады Вам помочь</StyledInfoText>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <StyledPhoneNumber>+375 29 6263030</StyledPhoneNumber>
+                    <StyledPhoneNumber>+375 29 6263000</StyledPhoneNumber>
                     <StyledPhoneNumber>+375 29 6563139</StyledPhoneNumber>
                 </div>
             </StyledContainer>

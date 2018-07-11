@@ -18,7 +18,7 @@ import Guarantee from 'containers/Guarantee/Loadable';
 import OraganizationalForms from 'containers/OraganizationalForms/Loadable';
 import PrinciplesOfOrganizations from 'containers/PrinciplesOfOrganizations/Loadable';
 import LawersGoals from 'containers/LawersGoals/Loadable';
-import ContactUs from 'containers/ContactUs';
+import ContactUs from 'containers/ContactUs/Loadable';
 import Statements from 'containers/Statements/Loadable';
 import Represent from 'containers/Represent/Loadable';
 import Assessment from 'containers/Assessment/Loadable';
