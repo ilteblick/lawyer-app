@@ -33,7 +33,7 @@ import AppBar from 'components/AppBar';
 import { StyledAppWrapper } from './styled';
 import Footer from './components/Footer';
 
-export default class App extends React.PureComponent {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -65,10 +65,12 @@ export default class App extends React.PureComponent {
       <StyledAppWrapper>
         <AppBar isScrolled={isScrolled} />
         <Switch>
+          <Route exact path="/history" component={History} />
           <Route exact path="/" component={HomePage} />
           <Route exact path="/person" component={PersonPage} />
           <Route exact path="/content" component={ContentPage} />
-          <Route exact path="/history" component={History} />
+
+
           <Route exact path="/attorneys" component={Attorneys} />
           <Route exact path="/attorneys/AlexeyPrybylski" component={AttorneyAlexey} />
           <Route exact path="/attorneys/TatyanaGumenuk" component={AttorneyTatsiana} />

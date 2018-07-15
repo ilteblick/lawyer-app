@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { StyledHeader, MenuItem, SubMenu, StyledSpan } from './styled';
+import { StyledHeader, MenuItem, SubMenu, StyledSpan, LegalSpan } from './styled';
 import Logo from './logo.jpg';
 
 export default class AppBar extends React.PureComponent {
@@ -18,7 +18,7 @@ export default class AppBar extends React.PureComponent {
                             <Link to="/"><img style={{ height: '120%' }} src={Logo} alt="" /></Link>
                             <div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center', textAlign: 'center' }}>
                                 <StyledSpan>LAW PARTNERSHIP of lawyers A. Prybylski & T. Gumenuk</StyledSpan>
-                                <StyledSpan>LEGAL assistance in FAMILY LAW </StyledSpan>
+                                <LegalSpan>LEGAL assistance in FAMILY LAW </LegalSpan>
                             </div>
                         </div>
                         <div style={{ background: 'white', display: 'flex', justifyContent: 'flex-end', borderBottom: '10px solid #D0D9E0' }}>
@@ -34,9 +34,9 @@ export default class AppBar extends React.PureComponent {
                                 <MenuItem>
                                     Область практики
                                 <ul>
-                                        <SubMenu><Link to="/areas/1">Предоставление юридической консультации до заключения брака, способы определения имущественных прав сторон в браке</Link></SubMenu>
-                                        <SubMenu><Link to="/areas/2">Предоставление юридической консультации лицам, находящимся в браке относительно их прав и обязанностей, режима собственности, способов регулирования правоотношений</Link></SubMenu>
-                                        <SubMenu><Link to="/areas/3">Подготовка к судебному спору о расторжении брака, разделе совместного нажитого имущества, определение места жительства несовершеннолетних детей, уплате алиментов, а также их ведение на стадии рассмотрения дела в суде</Link></SubMenu>
+                                        <SubMenu><Link to="/areas/1">Предоставление юридической консультации до заключения брака</Link></SubMenu>
+                                        <SubMenu><Link to="/areas/2">Предоставление юридической консультации лицам, находящимся в браке</Link></SubMenu>
+                                        <SubMenu><Link to="/areas/3">Подготовка к судебному спору о расторжении брака, ведение дела в суде</Link></SubMenu>
                                         <SubMenu><Link to="/areas/4">Дополнительная практика. Обязательства, наследование, юридические лица</Link></SubMenu>
                                     </ul>
                                 </MenuItem>

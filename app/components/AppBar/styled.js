@@ -12,12 +12,14 @@ export const StyledHeader = styled.header`
 
 export const StyledSpan = styled.span`
     font-size: 2.2em;
+    line-height: 2.2em;
     text-transform: uppercase;
     font-weight: 300;
     color: #a5a5a5;
     line-height: 1.1;
     font-family: 'Cormorant', serif;
     border-bottom: 1px solid #a5a5a5;
+
 `;
 
 export const MenuItem = styled.div`
@@ -83,4 +85,8 @@ export const Menu = styled.ul`
     margin: 0;
     padding: 0;
     list-style: none;
+`;
+
+export const LegalSpan = styled(StyledSpan)`
+    font-size: 1.6em;
 `;

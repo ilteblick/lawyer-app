@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
 import Title from 'components/Title';
 import SubTitle from 'components/SubTitle';
@@ -13,7 +14,7 @@ import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrum
 
 import Img from './IMG_3922.jpg';
 
-export default function History() {
+function History() {
     return (
         <StyledPageWrapper>
             <Banner label="История товарищества" />
@@ -79,3 +80,5 @@ export default function History() {
         </StyledPageWrapper>
     );
 }
+
+export default withRouter(History);

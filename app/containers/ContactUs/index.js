@@ -1,5 +1,6 @@
 import React from 'react';
 import { Map, Marker } from 'yandex-map-react';
+import { Carousel } from 'react-responsive-carousel';
 
 import { StyledPageWrapper } from 'components/PageContainers';
 
@@ -7,9 +8,40 @@ import ContactForm from '../HomePage/components/ContactForm';
 
 import Img from './IMG_3954.jpg';
 
+import { StyledTextContainer } from './styled';
+
 export default function ContentPage() {
     return (
         <StyledPageWrapper>
+            <div style={{ width: '100%' }}>
+                <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay>
+                    <StyledTextContainer>
+                        <span>
+                            "Только разделив проблему клиента, пропустив ее через себя и восприняв ее как свою собственную, можно быть уверенным, что тобой будут использованы все возможные средства и методы для отстаивания интересов доверителя"
+                        </span>
+                    </StyledTextContainer>
+                    <StyledTextContainer>
+                        <span>
+                            "Только использовав все предусмотренные законом средства и способы защиты, можно констатировать несостоятельность позиции своего подзащитного"
+                        </span>
+                    </StyledTextContainer>
+                    <StyledTextContainer>
+                        <span>
+                            "Своевременное обращение к квалифицированному юристу в абсолютнотном большинстве случаев исключает в будущем потерю материальных и временных ресурсов обратившегося"
+                        </span>
+                    </StyledTextContainer>
+                    <StyledTextContainer>
+                        <span>
+                            "В системе законодательства любого правового государства немало продуманных и выверенных до идеализма норм, однако не везде можно столкнутся с таким же продуманным и выверенным применением"
+                        </span>
+                    </StyledTextContainer>
+                    <StyledTextContainer>
+                        <span>
+                            "Хороший советник не тот, кто в угоду совему личному тщеславию и благополучию идёт к цели путём использования бесчиленных методов и средств, а тот, кто разделяя проблему доверителя достигает поставленных задач с минимальными расходами своего клиента"
+                        </span>
+                    </StyledTextContainer>
+                </Carousel>
+            </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', backgroundImage: `url(${Img})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                 <div style={{ display: 'flex', justifyContent: 'center', width: '100%', flexWrap: 'wrap' }}>
                     <div style={{ minWidth: 700, margin: 24 }}>

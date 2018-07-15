@@ -28,10 +28,10 @@ export default function ContactForm() {
         <StyledFormContainer>
             <StyledHeader>
                 <StyledHeaderTitle>
-                    Свяжитесь с нами сегодня!
+                    Будем рады вам помочь!
                 </StyledHeaderTitle>
                 <StyledDescription>
-                    Заполните следующую форму или позвоните по телефону +375 29 6263030.
+                    Заполните следующую форму или позвоните по телефонам +375 29 6263000, +375 29 6563139.
                 </StyledDescription>
             </StyledHeader>
             <div style={{ display: 'flex', flexDirection: 'column' }}>

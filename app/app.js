@@ -11,7 +11,7 @@ import 'babel-polyfill';
 // Import all the third party stuff
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import FontFaceObserver from 'fontfaceobserver';
 import 'sanitize.css/sanitize.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -38,9 +38,9 @@ const MOUNT_NODE = document.getElementById('app');
 
 const render = () => {
   ReactDOM.render(
-    <BrowserRouter >
+    <HashRouter>
       <App />
-    </BrowserRouter>,
+    </HashRouter>,
     MOUNT_NODE
   );
 };
