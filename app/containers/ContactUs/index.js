@@ -10,7 +10,7 @@ import Img from './IMG_3954.jpg';
 
 import { StyledTextContainer } from './styled';
 
-export default class ContentPage extends React.Component {
+export default class ContentPage extends React.PureComponent {
     constructor(props) {
         super(props);
 
@@ -24,10 +24,17 @@ export default class ContentPage extends React.Component {
         });
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        if (this.state.rendered !== nextState.rendered) {
+            return true;
+        }
+        return false;
+    }
+
     renderMap = () => {
         if (this.state.rendered) {
             return (
-                <Map onAPIAvailable={function () { console.log('API loaded'); }} center={[53.874458, 27.632018]} zoom={16}>
+                <Map center={[53.874458, 27.632018]} zoom={16}>
                     <Marker lat={53.875130} lon={27.634271} />
                 </Map>
             );
@@ -38,7 +45,7 @@ export default class ContentPage extends React.Component {
         return (
             <StyledPageWrapper>
                 <div style={{ width: '100%' }}>
-                    <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay transitionTime={1000} interval={7500}>
+                    <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay transitionTime={800} interval={7500} stopOnHover={false} infiniteLoop>
                         <StyledTextContainer>
                             <span>
                                 "Только разделив проблему клиента, пропустив ее через себя и восприняв ее как свою собственную, можно быть уверенным, что тобой будут использованы все возможные средства и методы для отстаивания интересов доверителя"

@@ -21,8 +21,8 @@ import App from 'containers/App';
 // Load the favicon and the .htaccess file
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 // Import CSS reset and Global Styles
+import 'antd/dist/antd.css';
 import './global-styles';
-
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)

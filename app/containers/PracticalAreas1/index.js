@@ -9,9 +9,10 @@ import { Header, MenuLink, Container } from 'components/LeftMenu';
 
 import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
+import FullScreenImg from 'components/FullScreenImg';
 
 import Img from './IMG_3991.jpg';
-import FullScreenImg from 'components/FullScreenImg';
+
 
 export default function Areas1() {
     return (

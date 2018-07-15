@@ -12,6 +12,6 @@ export default function Img(props) {
         }
     }
     return (
-        <img src={props.src} onClick={onFull} style={{ width: '100%', objectFit: 'contain', background: 'black', cursor: 'pointer' }} />
+        <img src={props.src} onClick={onFull} style={{ width: '100%', objectFit: 'contain', background: 'black', cursor: 'pointer' }} alt="" />
     );
 }

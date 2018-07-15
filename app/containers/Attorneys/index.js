@@ -8,11 +8,11 @@ import { Header, MenuLink, Container } from 'components/LeftMenu';
 
 import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
+import FullScreenImg from 'components/FullScreenImg';
 
 import Img from './IMG_3886.jpg';
 import { StyledA } from './styled';
 
-import FullScreenImg from 'components/FullScreenImg';
 
 export default function Attorneys() {
     return (

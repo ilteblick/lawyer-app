@@ -52,6 +52,7 @@ export default function ContactForm() {
                         <Select
                           style={{ marginBottom: '.5em', height: 50, fontSize: 18, width: '100%' }}
                           placeholder="Тип клиента"
+
                         >
                             {ClientTypeSelect.map((clientType) => (
                                 <Option key={clientType.key} value={clientType.value}>{clientType.label}</Option>)

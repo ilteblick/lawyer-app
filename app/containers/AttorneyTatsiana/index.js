@@ -10,9 +10,10 @@ import { Header, MenuLink, Container } from 'components/LeftMenu';
 
 import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
+import FullScreenImg from 'components/FullScreenImg';
 
 import Img from './IMG_3819.jpg';
-import FullScreenImg from 'components/FullScreenImg';
+
 
 export default function AttorneyTatsiana() {
     return (

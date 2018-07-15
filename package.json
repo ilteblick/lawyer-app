@@ -56,7 +56,14 @@
   },
   "babel": {
     "plugins": [
-      "styled-components"
+      "styled-components",
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": "css"
+        }
+      ]
     ],
     "presets": [
       [
@@ -274,6 +281,7 @@
     "babel-eslint": "7.2.3",
     "babel-loader": "7.1.4",
     "babel-plugin-dynamic-import-node": "1.0.2",
+    "babel-plugin-import": "^1.8.0",
     "babel-plugin-react-intl": "2.3.1",
     "babel-plugin-react-transform": "2.0.2",
     "babel-plugin-styled-components": "1.1.4",
@@ -300,6 +308,7 @@
     "eslint-plugin-redux-saga": "0.3.0",
     "eventsource-polyfill": "0.9.6",
     "exports-loader": "0.7.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "1.1.11",
     "html-loader": "0.5.5",
     "html-webpack-plugin": "3.0.6",

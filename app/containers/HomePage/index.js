@@ -8,7 +8,7 @@ import React from 'react';
 
 import MainImage from './components/MainImage';
 import ContactForm from './components/ContactForm';
-import VideoSection from './components/VideoSection';
+// import VideoSection from './components/VideoSection';
 import AboutUsSection from './components/AboutUsSection';
 import FeedBackSection from './components/FeedBackSection';
 

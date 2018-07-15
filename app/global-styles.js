@@ -1,5 +1,4 @@
 import { injectGlobal } from 'styled-components';
-import 'antd/dist/antd.css';
 
 /* eslint no-unused-expressions: 0 */
 injectGlobal`
@@ -39,11 +38,16 @@ injectGlobal`
 
   .ant-select-selection__rendered{
     line-height: 46px;
+    height: 100%;
   }
 
   .ant-select-selection__placeholder, .ant-select-search__field__placeholder{
     font-size: 18px;
     color: #d9d9d9;
+  }
+
+  .ant-select-selection, .ant-select-selection--single{
+    min-height: 100%;
   }
 
   a {
