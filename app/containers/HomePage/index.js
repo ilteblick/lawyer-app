@@ -18,7 +18,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
       <div style={{ paddingTop: 200 }}>
         <MainImage />
         <ContactForm />
-        <VideoSection />
+        {/* <VideoSection />*/}
         <AboutUsSection />
         <FeedBackSection />
       </div>

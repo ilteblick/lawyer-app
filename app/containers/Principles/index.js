@@ -11,6 +11,7 @@ import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'compone
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_4029.jpg';
+import FullScreenImg from 'components/FullScreenImg';
 
 export default function Principles() {
     return (
@@ -33,7 +34,7 @@ export default function Principles() {
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
                         <div style={{ width: '100%' }}>
-                            <img src={Img} alt="" style={{ width: '100%' }} />
+                            <FullScreenImg src={Img} />
                         </div>
                     </div>
 

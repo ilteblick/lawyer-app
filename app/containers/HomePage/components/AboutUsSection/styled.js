@@ -34,6 +34,7 @@ export const StyledDescriptionContainser = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    border-bottom: 24px solid #13355C;
 `;
 
 export const StyledLink = styled.span`

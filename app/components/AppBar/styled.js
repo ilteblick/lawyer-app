@@ -71,10 +71,12 @@ export const SubMenu = styled.li`
         font-size: 15px;
         font-family: 'Marcellus', serif;
         text-transform: uppercase;
+        text-decoration: none;
 
         &:hover{
             background-color: #DCD2D0;
             color: #4C4C4C;
+            text-decoration: none;
         }
     }
 

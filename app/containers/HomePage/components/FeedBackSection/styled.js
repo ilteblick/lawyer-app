@@ -7,7 +7,11 @@ export const StyledContainer = styled.div`
     flex-direction: column;
 `;
 
-export const StyledTitle = styled.span`
+export const StyledTitle = styled.div`
+    width: 60%;
+    align-self: center;
+    text-align: center;
+span {    
     color: #13355C;
     margin: 0;
     font-weight: 600;
@@ -15,6 +19,7 @@ export const StyledTitle = styled.span`
     line-height: 1.1;
     font-family: 'Cormorant', serif;
     text-align: center;
+    }
 `;
 
 export const StyledTextContainer = styled.div`

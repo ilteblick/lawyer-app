@@ -12,6 +12,8 @@ import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrum
 import Img from './IMG_3886.jpg';
 import { StyledA } from './styled';
 
+import FullScreenImg from 'components/FullScreenImg';
+
 export default function Attorneys() {
     return (
         <StyledPageWrapper>
@@ -31,7 +33,7 @@ export default function Attorneys() {
                 </Container>
                 <StyledPageContainer>
                     <Title>Адвокаты</Title>
-                    <img style={{ width: '100%' }} alt="" src={Img} />
+                    <FullScreenImg src={Img} />
                     <Link to="/attorneys/AlexeyPrybylski"><StyledA>Адвокат Алексей Прибыльский</StyledA></Link>
                     <Link to="/attorneys/TatyanaGumenuk"><StyledA>Адвокат Татьяна Гуменюк</StyledA></Link>
                 </StyledPageContainer>

@@ -12,6 +12,7 @@ import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'compone
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_3819.jpg';
+import FullScreenImg from 'components/FullScreenImg';
 
 export default function AttorneyTatsiana() {
     return (
@@ -37,7 +38,7 @@ export default function AttorneyTatsiana() {
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
                         <div style={{ width: '100%' }}>
-                            <img src={Img} alt="" style={{ width: '100%' }} />
+                            <FullScreenImg src={Img} />
                         </div>
                         <PersonInfo>Брак – это партнерство, основанное на взаимном уважении и обеспеченное законом</PersonInfo>
                     </div>

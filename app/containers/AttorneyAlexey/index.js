@@ -11,6 +11,8 @@ import { Header, MenuLink, Container } from 'components/LeftMenu';
 import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'components/PageContainers';
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
+import FullScreenImg from 'components/FullScreenImg';
+
 import Img from './IMG_3906.jpg';
 
 export default function AttorneyAlexey() {
@@ -37,7 +39,7 @@ export default function AttorneyAlexey() {
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
                         <div style={{ width: '100%' }}>
-                            <img src={Img} alt="" style={{ width: '100%' }} />
+                            <FullScreenImg src={Img} />
                         </div>
                         <PersonInfo>Обратившись к адвокату вчера – Вы избегаете проблем завтра</PersonInfo>
                     </div>

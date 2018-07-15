@@ -28,7 +28,7 @@ export default function ContactForm() {
         <StyledFormContainer>
             <StyledHeader>
                 <StyledHeaderTitle>
-                    Будем рады вам помочь!
+                    Будем рады Вам помочь!
                 </StyledHeaderTitle>
                 <StyledDescription>
                     Заполните следующую форму или позвоните по телефонам +375 29 6263000, +375 29 6563139.

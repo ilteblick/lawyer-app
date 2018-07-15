@@ -13,6 +13,7 @@ import { StyledPageWrapper, StyledPageContainer, StyledContainer } from 'compone
 import { Bradcrumps, BradcrumpsLink, BradcrumpsArrow } from 'components/Bradcrums';
 
 import Img from './IMG_3922.jpg';
+import FullScreenImg from 'components/FullScreenImg';
 
 function History() {
     return (
@@ -36,7 +37,7 @@ function History() {
 
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
                         <div style={{ width: '100%' }}>
-                            <img src={Img} alt="" style={{ width: '100%' }} />
+                            <FullScreenImg src={Img} />
                         </div>
                     </div>
 

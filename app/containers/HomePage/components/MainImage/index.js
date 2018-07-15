@@ -1,24 +1,23 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
 import { StyledImageContainer } from './styled';
 
-import MainImg from '../../resources/IMG_3883.jpg';
+import MainImg1 from '../../resources/IMG_3883.jpg';
+import MainImg2 from '../../resources/IMG_3922.jpg';
+import MainImg3 from '../../resources/IMG_3971.jpg';
 
 export default function MainImage() {
-    function onFull(e) {
-        console.log(e.target);
-        const elem = e.target;
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) {
-            elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen();
-        }
-    }
-
     return (
-        <StyledImageContainer onClick={onFull}>
-            <img src={MainImg} style={{ width: '100%' }} />
-        </StyledImageContainer>
+        <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay transitionTime={1000} interval={7500}>
+            <StyledImageContainer >
+                <img src={MainImg1} style={{ width: '100%' }} />
+            </StyledImageContainer>
+            <StyledImageContainer >
+                <img src={MainImg2} style={{ width: '100%' }} />
+            </StyledImageContainer>
+            <StyledImageContainer >
+                <img src={MainImg3} style={{ width: '100%' }} />
+            </StyledImageContainer>
+        </Carousel>
     );
 }

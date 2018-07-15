@@ -7,9 +7,9 @@ export default function FeedBackSection() {
     return (
         <StyledContainer>
             <StyledTitle>
-                Отзывы
+                <span>Отзывы</span>
             </StyledTitle>
-            <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay>
+            <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay transitionTime={1000} interval={7500}>
                 <StyledTextContainer>
                     <StyledText>«Алексей и Татьяна являются специалистами в своей области, всегда готовы прейти на помощь и решить наши проблему. Спасибо.»</StyledText>
                 </StyledTextContainer>
