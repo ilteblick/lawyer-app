@@ -1,9 +1,10 @@
 const path = require('path');
+require('dotenv').config();
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+sgMail.setApiKey(process.env.EMAIL_API_KEY);
 
 function createWebpackMiddleware(compiler, publicPath) {
   return webpackDevMiddleware(compiler, {
