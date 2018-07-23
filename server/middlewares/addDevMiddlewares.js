@@ -40,7 +40,7 @@ module.exports = function addDevMiddlewares(app, webpackConfig) {
   app.post('/send-email', (req, res) => {
     const { fio, email, message, type } = req.body;
     const msg = {
-      to: 'deniskochetkov1995@gmail.com',
+      to: 'pryb_alexey@mail.ru',
       from: 'test@example.com',
       subject: 'beladvocate.by API message',
       text: `ФИО: ${fio}, тип клиента: ${type}, ${email}. ${message}`,
