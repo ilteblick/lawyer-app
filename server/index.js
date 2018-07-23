@@ -2,6 +2,7 @@
 
 const express = require('express');
 const logger = require('./logger');
+const bodyParser = require('body-parser');
 
 const argv = require('./argv');
 const port = require('./port');
@@ -15,6 +16,7 @@ const app = express();
 // app.use('/api', myApi);
 
 // In production we need to pass these values in instead of relying on webpack
+app.use(bodyParser.json({ limit: '50mb' }));
 setup(app, {
   outputPath: resolve(process.cwd(), 'build'),
   publicPath: '/',

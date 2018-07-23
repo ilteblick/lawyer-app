@@ -2,6 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey('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');
 
 function createWebpackMiddleware(compiler, publicPath) {
   return webpackDevMiddleware(compiler, {
@@ -33,5 +35,20 @@ module.exports = function addDevMiddlewares(app, webpackConfig) {
         res.send(file.toString());
       }
     });
+  });
+
+  app.post('/send-email', (req, res) => {
+    const { fio, email, message, type } = req.body;
+    const msg = {
+      to: 'deniskochetkov1995@gmail.com',
+      from: 'test@example.com',
+      subject: 'beladvocate.by API message',
+      text: `ФИО: ${fio}, тип клиента: ${type}, ${email}. ${message}`,
+      html: `<strong>ФИО: ${fio}, тип клиента: ${type}, ${email}. ${message}</strong>`,
+    };
+    sgMail.send(msg)
+      .then(() => {
+        res.send('ok');
+      });
   });
 };
